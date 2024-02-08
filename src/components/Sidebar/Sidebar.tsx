@@ -1,4 +1,4 @@
-import { Home } from "lucide-react";
+import { Building, Home, Store, Ticket, User } from "lucide-react";
 import SidebarItem from "./SidebarItem/SidebarItem";
 
 type SidebarProps = {
@@ -13,6 +13,10 @@ export default function Sidebar({ sidebarOpen }: SidebarProps) {
       <div className={`h-16 bg-velblue`}></div>
       <div className={`flex flex-col items-center gap-2 py-4`}>
         <SidebarItem icon={<Home />} to="/" text="Home" />
+        <SidebarItem icon={<Ticket />} to="/tickets" text="Tickets" />
+        <SidebarItem icon={<Building />} to="/companies" text="Companies" />
+        <SidebarItem icon={<Store />} to="/branches" text="Branches" />
+        <SidebarItem icon={<User />} to="/user" text="Users" />
       </div>
     </aside>
   );
